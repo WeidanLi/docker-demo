@@ -1,0 +1,17 @@
+server:
+  port: 18080
+spring:
+  application:
+    name: my-java-docker-web
+  profiles:
+    active: ${Spring.profiles.active}
+
+---
+spring:
+  profiles: dev1
+---
+spring:
+  profiles: dev2
+---
+spring:
+  profiles: prod

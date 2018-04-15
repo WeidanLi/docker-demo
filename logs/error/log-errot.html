@@ -1,0 +1,176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Apr 15 16:50:20 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>7514</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter category">org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter</td>
+<td title="Message">
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 10908 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 10908, or configure this application to listen on another port.
+</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Apr 15 16:54:23 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>10306</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.springframework.boot.SpringApplication category">org.springframework.boot.SpringApplication</td>
+<td title="Message">Application startup failed</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webServiceImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'Spring.profiles.active' in value &quot;${Spring.profiles.active}&quot;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.__refresh(AbstractApplicationContext.java:543)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.jrLockAndRefresh(AbstractApplicationContext.java)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at cn.liweidan.docker.web.WebApplication.main(WebApplication.java:16)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'Spring.profiles.active' in value &quot;${Spring.profiles.active}&quot;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:831)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 19 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Apr 15 16:56:25 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>7331</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.springframework.boot.SpringApplication category">org.springframework.boot.SpringApplication</td>
+<td title="Message">Application startup failed</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webServiceImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'Spring.profiles.active' in value &quot;${Spring.profiles.active}&quot;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.__refresh(AbstractApplicationContext.java:543)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.jrLockAndRefresh(AbstractApplicationContext.java)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at cn.liweidan.docker.web.WebApplication.main(WebApplication.java:16)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'Spring.profiles.active' in value &quot;${Spring.profiles.active}&quot;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:831)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 19 more
+</td></tr>
